@@ -1,8 +1,6 @@
 import discord
-from discord.ext import commands
-from discord.utils import get
-#import youtube_dl
-import os
+import time
+import asyncio
 
 # ********************************************************************************************************
 client = discord.Client()
