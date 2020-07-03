@@ -2,8 +2,10 @@ import discord
 import time
 import asyncio
 
-# ********************************************************************************************************
 client = discord.Client()
+
+# ********************************************************************************************************
+
 
 # ********************************************************************************************************
 
@@ -21,7 +23,13 @@ async def on_message(message):
 
     id = client.get_guild(548381331684589578)
     channels = ["thetavern", "nsfw-antiwholesome", "miras-wholesome-channel", "east_asian_casino"]
-
+    bad_words = ["bad", "stop", "45"]
+    
+    for word in bad_words:
+        if message.content.count(word) > 0:
+            print("A bad word was said")
+            await message.channel.purge(limit=1)
+            
     # Checks if in correct channel; Restricting Channels
     if str(message.channel) in channels:
 
@@ -33,6 +41,7 @@ async def on_message(message):
         if message.content == "$users":
             await message.channel.send(f"""# of Members: {id.member_count}""")
         # We cann use id.member_count
+
 
 # ********************************************************************************************************
 #@commands.command(pass_context=True)
