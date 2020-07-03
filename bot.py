@@ -42,4 +42,4 @@ async def on_message(message):
    # await self.bot.say("hugs {}".format(ctx.message.author.mention()))
 
 # ********************************************************************************************************
-client.run('NzI3MjkyOTYxMzgwODkyNzkz.Xvpv6Q.AqdgL8oxUSo4p2n_s6TUdl0pAVw')
+client.run('NzI3MjkyOTYxMzgwODkyNzkz.Xv6orQ.Bq7J8kMx_tcxHZzexqbONARnuY0')
