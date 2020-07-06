@@ -22,8 +22,17 @@ class HelpCommands(commands.Cog):
 
         embed.add_field(name=":performing_arts: Roleplay :performing_arts:", value="• [Coming Soon]\n• [Coming Soon]\n• [Coming Soon]", inline=True)
 
+        # images/gifs should be 128x128 i think
+        embed.set_footer(text="Bot by Wulong Tea #3823", icon_url="https://pa1.narvii.com/5921/00e44dbc58a302aaa66142c041da9a7e0ecc8a45_128.gif")
+
         await ctx.channel.send(content=None, embed=embed)
 
 
 def setup(bot):
     bot.add_cog(HelpCommands(bot))
+
+
+
+# Useful Links:
+# Custom Embeds : https://docs.yagpdb.xyz/others/custom-embeds
+# Discord Embed Generator : https://cog-creators.github.io/discord-embed-sandbox/ 
