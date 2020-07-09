@@ -16,7 +16,7 @@ class HelpCommands(commands.Cog):
 
         embed.add_field(name=":question: Help :question:", value="• $help\n• [Coming Soon]\n• [Coming Soon]\n• [Coming Soon]", inline=True)
 
-        embed.add_field(name=":video_game: Games :video_game:", value="• $8ball\n• [Coming Soon]\n• [Coming Soon]\n• [Coming Soon]", inline=True)
+        embed.add_field(name=":video_game: Games :video_game:", value="• $8ball\n• $dice\n• [Coming Soon]\n• [Coming Soon]", inline=True)
 
         embed.add_field(name=":musical_note: Music :musical_note:", value="• [Coming Soon]\n• [Coming Soon]\n• [Coming Soon]", inline=True)
 

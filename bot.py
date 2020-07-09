@@ -52,7 +52,7 @@ async def on_message(message):
 
 # ********************************************************************************************************
 
-extensions = ['cogs.Games', 'cogs.Misc', 'cogs.HelpCommands']
+extensions = ['cogs.Games', 'cogs.Misc', 'cogs.HelpCommands', 'cogs.Roleplay']
 
 if __name__ == '__main__':
     for ext in extensions:

@@ -19,7 +19,13 @@ class Games(commands.Cog):
         ]
 
         await ctx.send(random.choice(response))
-        
+
+    # Dice Roll
+    @commands.command(name='dice', description="Rolls a number 1-6", brief="Rolls those dices!", pass_context=True)
+    async def dices(self, ctx):
+        await ctx.send(random.randint(1,6))
+
+
 def setup(bot):
     bot.add_cog(Games(bot))
 
