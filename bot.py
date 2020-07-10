@@ -11,6 +11,10 @@ bot = commands.Bot(command_prefix='$') # define the command decorator
 # requires so that we can use our OWN $help command
 bot.remove_command('help')
 
+@bot.event
+async def onn_ready():
+    await bot.change_presence(status=discord.Status.idle, activity=discord.Game('Hello there!!'))
+
 # ********************************************************************************************************
 
 # Welcome Users to Channel
