@@ -51,7 +51,7 @@ class Roleplay(commands.Cog):
     # ********************************************************************************************************
 
     # Send angry gif
-    @commands.command(name='angry', description="Send angry gif!", brief="GRRRAAHHHHHHH!!", pass_context=True)
+    @commands.command(name='angry', description="Send angry gif!", brief="GRRRAAHHHHHHH!!", aliases=['furious', 'mad', 'engraged', 'rage'], pass_context=True)
     async def angry(self, ctx):
         gifList =[
             'https://media1.tenor.com/images/2f198dc24f638fc9f16776c8ebd183fd/tenor.gif?itemid=14682313',
@@ -69,7 +69,30 @@ class Roleplay(commands.Cog):
         embed.set_image(url=random.choice(gifList))
         await ctx.channel.send(content=None, embed=embed)
 
-    
+    # ********************************************************************************************************
+
+    # Send punch gif
+    @commands.command(name='punch', description="Send punch gif!", brief="SMASSHHUUUUU!!", aliases=['beat', 'smash'], pass_context=True)
+    async def punch(self, ctx):
+        gifList =[
+            'https://media1.tenor.com/images/b2db2a7fe0b9f68f2869b4e0d11a9490/tenor.gif?itemid=8932977',
+            'https://media1.tenor.com/images/a30a6fa49addc4149ab552de30023ddd/tenor.gif?itemid=16820809',
+            'https://media1.tenor.com/images/7bdfaef4f77a6849c1213fb0ba13f183/tenor.gif?itemid=5208049',
+            'https://media1.tenor.com/images/bfbddce813ae876243f4189041b64e26/tenor.gif?itemid=15004790',
+            'https://media1.tenor.com/images/f0a500c18080f41afcd504ae2d1a32a6/tenor.gif?itemid=17517118',
+            'https://media1.tenor.com/images/855c900190fb6abfabaed7da4da6f73c/tenor.gif?itemid=16962926',
+            'https://media1.tenor.com/images/31003b964b358e937ec43ebeb7774d4c/tenor.gif?itemid=14137100',
+            'https://media1.tenor.com/images/40855e799a1409c9e7d1cc804db71c19/tenor.gif?itemid=17339613',
+            'https://media1.tenor.com/images/ee7e52abbf2f0bf3d4238d026bbb20df/tenor.gif?itemid=17315013',
+            'https://tenor.com/view/all-migth-one-for-all-all-for-one-anime-my-hero-academia-gif-17019613',
+            'https://media1.tenor.com/images/f9794270d7fa59618ef8b5c5715db137/tenor.gif?itemid=17237749'
+
+        ]
+
+        embed = discord.Embed(name="Punch Gif", description= ctx.message.author.name + " punches")
+        embed.set_image(url=random.choice(gifList))
+        await ctx.channel.send(content=None, embed=embed)
+
 
 def setup(bot):
     bot.add_cog(Roleplay(bot))
