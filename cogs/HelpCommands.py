@@ -12,15 +12,15 @@ class HelpCommands(commands.Cog):
         
         embed.set_thumbnail(url="https://pbs.twimg.com/profile_images/863743347545878532/lVy3o9CT_reasonably_small.jpg")
 
-        embed.add_field(name=":clown: Misc :clown:", value="• $hello\n• [Coming Soon]\n• [Coming Soon]\n• [Coming Soon]", inline=True)
+        embed.add_field(name=":clown: Misc :clown:", value="• m!hello\n• [Coming Soon]\n• [Coming Soon]\n• [Coming Soon]", inline=True)
 
-        embed.add_field(name=":question: Help :question:", value="• $help\n• [Coming Soon]\n• [Coming Soon]\n• [Coming Soon]", inline=True)
+        embed.add_field(name=":question: Help :question:", value="• m!help\n• [Coming Soon]\n• [Coming Soon]\n• [Coming Soon]", inline=True)
 
-        embed.add_field(name=":video_game: Games :video_game:", value="• $8ball\n• $dice\n• [Coming Soon]\n• [Coming Soon]", inline=True)
+        embed.add_field(name=":video_game: Games :video_game:", value="• m!8ball\n• m!dice\n• [Coming Soon]\n• [Coming Soon]", inline=True)
 
         embed.add_field(name=":musical_note: Music :musical_note:", value="• [Coming Soon]\n• [Coming Soon]\n• [Coming Soon]", inline=True)
 
-        embed.add_field(name=":performing_arts: Roleplay :performing_arts:", value="• $explosion\n• [Coming Soon]\n• [Coming Soon]", inline=True)
+        embed.add_field(name=":performing_arts: Roleplay :performing_arts:", value="• m!explosion\n• [Coming Soon]\n• [Coming Soon]", inline=True)
 
         # images/gifs should be 128x128 i think
         embed.set_footer(text="Bot by Wulong Tea #3823", icon_url="https://pa1.narvii.com/5921/00e44dbc58a302aaa66142c041da9a7e0ecc8a45_128.gif")

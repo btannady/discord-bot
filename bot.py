@@ -5,8 +5,7 @@ import asyncio
 import random
 import urllib.parse, urllib.request, re
 
-#client = discord.Client(command_prefix='$')
-bot = commands.Bot(command_prefix='$') # define the command decorator
+bot = commands.Bot(command_prefix='m!') # define the command decorator
 
 # requires so that we can use our OWN $help command
 bot.remove_command('help')
@@ -15,7 +14,7 @@ bot.remove_command('help')
 
 @bot.event
 async def on_ready():
-    await bot.change_presence(status=discord.Status.online, activity=discord.Game('$help'))
+    await bot.change_presence(status=discord.Status.online, activity=discord.Game('m!help'))
 
 # ********************************************************************************************************
 
