@@ -20,7 +20,7 @@ class HelpCommands(commands.Cog):
 
         embed.add_field(name=":musical_note: Music :musical_note:", value="• [Coming Soon]\n• [Coming Soon]\n• [Coming Soon]", inline=True)
 
-        embed.add_field(name=":performing_arts: Roleplay :performing_arts:", value="• m!explosion\n• [Coming Soon]\n• [Coming Soon]", inline=True)
+        embed.add_field(name=":performing_arts: Roleplay :performing_arts:", value="• m!explosion\n• m!cry\n• [Coming Soon]", inline=True)
 
         # images/gifs should be 128x128 i think
         embed.set_footer(text="Bot by Wulong Tea #3823", icon_url="https://pa1.narvii.com/5921/00e44dbc58a302aaa66142c041da9a7e0ecc8a45_128.gif")
