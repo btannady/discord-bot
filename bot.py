@@ -3,6 +3,7 @@ from discord.ext import commands #enables prefix
 import time
 import asyncio
 import random
+import os
 import urllib.parse, urllib.request, re
 
 bot = commands.Bot(command_prefix='m!') # define the command decorator
@@ -11,10 +12,18 @@ bot = commands.Bot(command_prefix='m!') # define the command decorator
 bot.remove_command('help')
 
 # ********************************************************************************************************
-
+# Bot comes online
 @bot.event
 async def on_ready():
+
+    # updates the bot's status
     await bot.change_presence(status=discord.Status.online, activity=discord.Game('m!help'))
+
+    # bot greets everyone when joining the call
+    
+    # load music.py
+    bot.load_extension('cogs.music')
+
 
 # ********************************************************************************************************
 
@@ -57,7 +66,7 @@ async def on_message(message):
 
 # ********************************************************************************************************
 
-extensions = ['cogs.Games', 'cogs.Misc', 'cogs.HelpCommands', 'cogs.Roleplay']
+extensions = ['cogs.Games', 'cogs.Misc', 'cogs.HelpCommands', 'cogs.Roleplay', 'cogs.League']
 
 if __name__ == '__main__':
     for ext in extensions:

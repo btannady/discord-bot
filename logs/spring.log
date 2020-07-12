@@ -1,0 +1,1 @@
+2020-07-12 00:17:04.423  INFO 7148 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : Connection closed from /[0:0:0:0:0:0:0:1]:56095 with status CloseStatus[code=1006, reason=] -- Session can be resumed within the next 60 seconds with key music-node
