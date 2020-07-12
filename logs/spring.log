@@ -200,3 +200,11 @@ Caused by: java.io.EOFException: XNIO000812: Connection closed unexpectedly
 	at org.xnio.http.HttpUpgrade$HttpUpgradeState$UpgradeResultListener.handleEvent(HttpUpgrade.java:416) ~[xnio-api-3.3.8.Final.jar!/:3.3.8.Final]
 	... 10 common frames omitted
 
+2020-07-12 15:22:46.273  INFO 2233 --- [XNIO-1 I/O-3] lavalink.server.io.SocketServer          : Connection closed from /[0:0:0:0:0:0:0:1]:51646 with status CloseStatus[code=1006, reason=] -- Session can be resumed within the next 60 seconds with key music-node
+2020-07-12 15:22:56.807  INFO 2233 --- [XNIO-1 task-4] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /[0:0:0:0:0:0:0:1]:51813
+2020-07-12 15:22:56.818  INFO 2233 --- [XNIO-1 task-4] lavalink.server.io.SocketServer          : Connection successfully established from /[0:0:0:0:0:0:0:1]:51813
+2020-07-12 15:22:56.819  INFO 2233 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"op": "configureResuming", "key": "music-node", "timeout": 60}
+2020-07-12 15:22:58.748  INFO 2233 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"op": "voiceUpdate", "guildId": "548381331684589578", "sessionId": "acc2acfb4333e8127008a6bb5288986d", "event": {"token": "5bc74991d6d4d286", "guild_id": "548381331684589578", "endpoint": "us-west380.discord.media:80"}}
+2020-07-12 15:23:05.738  INFO 2233 --- [XNIO-1 task-5] l.server.player.AudioLoaderRestHandler   : GET /loadtracks
+2020-07-12 15:23:06.581  INFO 2233 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : No matches found
+2020-07-12 15:23:46.278  INFO 2233 --- [pool-2-thread-1] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
