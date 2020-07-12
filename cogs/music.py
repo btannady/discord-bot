@@ -14,6 +14,13 @@ class MusicCog(commands.Cog):
     @commands.command(name='join')
     async def join(self, ctx):
         print('join command worked')
+        member = utils.find(lambda m: m.id == ctx.author.id, ctx.guild.members)
+        if member is not None and member.voice is not None:
+            vc = member.voice.channel
+            player = self.bot.music.player_manager.create(ctx.guild.id, endpoint=str(ctx.guild.region))
+            if not player.is_connected:
+                player.store('channel', ctx.channel.id)
+                await self.connect_to(ctx.guild.id, str(vc.id))
         
     @commands.command(name='play')
     async def play(self, ctx, *, query):
@@ -26,7 +33,7 @@ class MusicCog(commands.Cog):
             query_result = ''
             for track in tracks:
                 i = i + 1
-                query_result = query_result + f'{i}) {tracks["info"]["title"]} - {track["info"]["uri"]}\n'
+                query_result = query_result + f'{i}) {track["info"]["title"]} - {track["info"]["uri"]}\n'
             embed = Embed()
             embed.description = query_result
 
