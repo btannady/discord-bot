@@ -46,13 +46,13 @@ async def on_message(message):
     # ******************************************
 
     # deletes naughty words from chat
-    bad_words = "motherfucker", "asshole", "faggot", "cunt", "bitch", "nigga", "slut", "twat", "nigger", "dyke"
+    bad_words = "nerd", "ugly"
 
     for word in bad_words:
         if message.content.lower().count(word) > 0:
             print("A bad word was said")
             await message.channel.purge(limit=1)
-            await message.channel.send("Don't be toxic you baka!! Hmphh!! >:'C")
+            await message.channel.send("You said a bad word!! >:'C")
 
     # ****************************************** 
 
