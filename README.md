@@ -3,7 +3,7 @@ Developed in Python using open-source APIs, the bot roleplays a fun persona whil
 <br />
 <h6>Music tool</h6> Users can command bot to join server voice call channels as an entity and automatically play through listed music queues.
 <br />
-<h6>Chat Moderator tool</h6> With permission, users are able to activate bot to detect, censor, and record, any messages sent by other users within the Discord chatroom.
+<h6>Chat Moderator tool</h6> Permitted users are allowed to use bot to detect, censor, and record published user messages within the Discord chatroom.
 <br />
 <h6>Minigame tools</h6> Users are able to gain access to a variety of small minigames. 
 <br />
