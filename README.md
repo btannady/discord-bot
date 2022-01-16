@@ -19,5 +19,7 @@ Check out Riot Games' API page here: https://developer.riotgames.com/
 <br />
 Made with Python, FFmpeg, Homebrew, and Riot Games Developer API.
 
+(Note: Discord assigns developers with a private and unique API security token, so the token currently in this repository has been altered.)
+
 ![image](https://user-images.githubusercontent.com/39476859/149652355-a59c8012-99db-4ede-84bd-591285ff1151.png)
 
