@@ -13,7 +13,7 @@ Users are given the ability to quickly search up previous performance history of
 <br />
 Player data is transferred using JSON files and algorithmically arranged to effectively assist players in identifying statistically-proven strengths and weaknesses of their teammates and opponents. 
 <br />
-Check out Riot Games' API page here: https://developer.riotgames.com/
+More details about Riot Games' API page here: https://developer.riotgames.com/
 <br />
 <br />
 Made with Python, FFmpeg, Homebrew, and Riot Games Developer API.
