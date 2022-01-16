@@ -1,4 +1,4 @@
-# discordBot
+# discord-bot
 Developed in Python using open-source APIs, the bot imitates a humanistic persona while assisting Discord servers in gaining additional access to enhanced music, chat moderator, and gameplay tools. 
 <br />
 <h6>Music tool</h6> Users can command bot to join voice call channels within the server and automatically play their queued list of music.
