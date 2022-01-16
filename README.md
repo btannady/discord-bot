@@ -20,5 +20,5 @@ Made with Python, FFmpeg, Homebrew, and Riot Games Developer API.
 <br />
 <br />
 
-![image](https://user-images.githubusercontent.com/39476859/149652278-cde10d9c-3985-409c-b56b-921bcb1768e4.png)
+![image](https://user-images.githubusercontent.com/39476859/149652299-4abe0924-2518-481c-b58c-92d03f2dea8d.png)
 
