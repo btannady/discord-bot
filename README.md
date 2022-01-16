@@ -1,7 +1,7 @@
 # discord-bot
 Developed in Python using open-source APIs, the bot roleplays a fun persona while assisting Discord servers in accessing additional music control, chat moderator, and gameplay tools. 
 <br />
-<h6>Music tool</h6> Users can command bot to join voice call channels within the server and automatically play their queued list of music.
+<h6>Music tool</h6> Users can command bot to join server voice call channels as an entity and automatically play through listed music queues.
 <br />
 <h6>Chat Moderator tool</h6> With permission, users are able to activate bot to detect, censor, and record, any messages sent by other users within the Discord chatroom.
 <br />
