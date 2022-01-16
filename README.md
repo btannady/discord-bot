@@ -17,3 +17,6 @@ Check out Riot Games' API page here: https://developer.riotgames.com/
 <br />
 <br />
 Made with Python, FFmpeg, Homebrew, and Riot Games Developer API.
+
+![image](https://user-images.githubusercontent.com/39476859/149650816-8b7cd9c3-1071-41e2-bd22-272833a81f75.png)
+
